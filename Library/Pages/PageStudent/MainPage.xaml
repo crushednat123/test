@@ -1,0 +1,57 @@
+﻿<Page x:Class="Library.Pages.PageStudent.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+     xmlns:uc="clr-namespace:Library.UserControls"
+      mc:Ignorable="d"       
+      Title="test">
+
+
+        
+        
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Margin="20">
+            <Button x:Name="btnBooks" Click="btnBooks_Click" Style="{StaticResource btnContentMenu}" Height="140">
+                <uc:InfoBook                       
+                     Number="Книги"
+                     Icon="BookOpen"
+                     MarginText="-10 0 0 40"
+                     Background1="#827bff"
+                     Background2="#d9b5ff"
+                     EllipsBackground1="#b298fd" EllipsBackground2="#e4bbff" />
+            </Button>
+        </StackPanel>
+
+        <StackPanel Margin="20">
+            <Button x:Name="btnBookMe" Click="btnBookMe_Click" Style="{StaticResource btnContentMenu}" Height="140" >
+                <uc:InfoBook
+                        MarginText="-17 0 0 37"
+                         Number="Мои книги"
+                         Icon="Book"
+                         Background1="#fd8a87"
+                         Background2="#f3ab92"
+                         EllipsBackground1="#fbd5a8"
+                         EllipsBackground2="#fdb89b"/>
+            </Button>
+        </StackPanel>
+
+        <StackPanel Margin="20">
+            <Button x:Name="btnExit" Click="btnExit_Click" Style="{StaticResource btnContentMenu}" Height="140" >
+                <uc:InfoBook
+                        MarginText="-17 0 0 37"
+                        Number="Выход"                      
+                        Icon="DoorOpen"
+                        Background1="#fc84cb" 
+                        Background2="#fc8fae"
+                        EllipsBackground1="#fc8fae"
+                        EllipsBackground2="#ffabe6"/>
+
+                <Button.ToolTip>
+                    <ToolTip Content="Выйти из уч. записи" Width="150"/>
+                </Button.ToolTip>
+            </Button>
+        </StackPanel>
+    </StackPanel>
+  
+</Page>

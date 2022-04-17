@@ -1,0 +1,81 @@
+﻿<Page x:Class="Library.Pages.PageStudent.Pages.EditUserPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"   
+      mc:Ignorable="d"       
+      Title="EditUserPage">
+
+
+
+    <!--<Border Background="White" CornerRadius="10">
+        <StackPanel>
+        <TextBox  GotMouseCapture="tBLogin_GotMouseCapture"  Style="{StaticResource TextBox}" Margin="0 10 0 0" Width="230"  Name="tBLogin"/>
+
+        <fa:IconImage x:Name="iconLogin" Icon="UserAlt" HorizontalAlignment="Left" Foreground="Gray" Margin="10 -30 0 0"/>
+
+        <TextBlock x:Name="Placeholder" IsHitTestVisible="False"
+                       TextWrapping="Wrap"                      
+                       Text="Логин"
+                       Margin="35 -30 0 0"
+                               
+                       VerticalAlignment="Center"                       
+                       Foreground="DarkGray"
+                       HorizontalAlignment="Left">
+
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Setter Property="FontFamily"  Value="Comic Sans MS"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=tBLogin}" Value="">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+
+
+
+        <TextBlock HorizontalAlignment="Right" Margin="0 0 10 20">
+            <TextBlock.Style>
+
+                <Style TargetType="TextBlock">
+                    <Setter Property="FontFamily"  Value="Comic Sans MS"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text.Length, ElementName=tBLogin}" Value="24">
+                            <Setter Property="Foreground" Value="Red"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+						<Run Text="{Binding Text.Length, ElementName=tBLogin, Mode=OneWay}"/>/<Run Text="{Binding MaxLength, ElementName=tBLogin}"/>
+        </TextBlock>
+
+        <PasswordBox PasswordChanged="pBPassword_PasswordChanged"  GotMouseCapture="pBPassword_GotMouseCapture"  Name="pBPassword" Width="230"/>
+        <TextBox TextChanged="tBPassword_TextChanged" GotMouseCapture="tBPassword_GotMouseCapture"  x:Name="tBPassword" Style="{StaticResource TextBox}"  Width="230" Visibility="Collapsed"/>
+
+        <fa:IconImage x:Name="iconPassword" Icon="Lock" HorizontalAlignment="Left" Foreground="Gray" Margin="10 -30 0 0"/>
+        <TextBlock x:Name="textBlockPassword" Visibility="Visible"                                      
+                       Text="Пароль"
+                       Margin="35 -30 0 0"
+                       VerticalAlignment="Center"                       
+                       Foreground="DarkGray"
+                       HorizontalAlignment="Left"/>
+
+        <TextBlock HorizontalAlignment="Right" Name="text" Margin="0 0 10 0">
+				      /24
+        </TextBlock>
+        <TextBlock x:Name="pasText" HorizontalAlignment="Right" Margin="0 -17 31 0" >
+					
+					   0
+        </TextBlock>
+    </StackPanel>
+    </Border>-->
+    
+ 
+</Page>
